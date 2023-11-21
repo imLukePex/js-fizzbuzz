@@ -1,4 +1,6 @@
 const container = document.querySelector(".container");
+let multipleThree = "";
+let multipleFive = "";
 
 // VERSIONE Append
 for (let i = 1; i <= 100; i++) {
@@ -9,6 +11,11 @@ for (let i = 1; i <= 100; i++) {
 
     // aggiunta della classe "square" al div
     square.classList.add("square");
+
+    // contenuto div multipli di 3
+    if (i % 3 === 0) {
+        square.append(i) = multipleThree
+    }
 
     // aggiunta del contenuto al div
     square.append(i);
