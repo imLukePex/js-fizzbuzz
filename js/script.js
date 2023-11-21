@@ -1,6 +1,7 @@
 const container = document.querySelector(".container");
 let multipleThree = "Fizz";
 let multipleFive = "Buzz";
+let multipleBoth = "FizzBuzz"
 
 // VERSIONE Append
 for (let i = 1; i <= 100; i++) {
@@ -12,12 +13,16 @@ for (let i = 1; i <= 100; i++) {
     // aggiunta della classe "square" al div
     square.classList.add("square");
     
-    // aggiunta del contenuto al div
-    square.append(i);
-    
-    // contenuto div multipli di 3
+    // aggiunta contenuto div multipli di 3
     if (i % 3 === 0) {
-        square.append(i) = multipleThree;
+        square.append(multipleThree);
+    } else if (i % 5 === 0) {
+        square.append(multipleFive);
+    } else if (i % 3 === 0 && i % 5 === 0) {
+        square.append(multipleBoth);
+    } else {
+        // aggiunta del contenuto al div
+        square.append(i);
     }
 
     // aggiunta del div al container
