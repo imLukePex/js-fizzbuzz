@@ -11,14 +11,19 @@
     color-scheme: dark;
 }
 
-/* Stili Main */
+/* 
+Stili Main 
+*/
+
+/* Stili Titolo */
 #title {
     text-align: center;
     color: #ffff;
-    font-size: 100px;
+    font-size: 130px;
     margin: 50px 0;
 }
 
+/* Stili Container */
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -37,4 +42,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.multiple-three {
+    background-color: #0cd6a1;
+}
+
+.multiple-five {
+    background-color: #ffd166;
+}
+
+.multiple-both {
+    background-color: #f0466f;
 }
